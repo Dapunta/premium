@@ -35,8 +35,7 @@ def clear():
 	else:os.system("clear")	
 		
 def log_token():
-        print logo
-        lolcat
+        print logo | lolcat
         print logo2
 	data = raw_input("   [•] Token :")
 	try:
