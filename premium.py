@@ -175,7 +175,7 @@ def generate(text):
                                         results.append("123456")
 	return results
 
-class crack:
+class crack():
         os.system("clear")
         print logo
 	def __init__(self):
