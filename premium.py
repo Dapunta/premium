@@ -118,6 +118,7 @@ def publik():
                 print ("\033[0;97m─────────────────────────────────────────────────────────────")
 		raw_input("\033[0;97m   [•] [Kembali]")
                 os.system("clear")
+		print logo
 		crack()
 		
 	except Exception as e:
@@ -178,8 +179,6 @@ def generate(text):
 	return results
 
 class crack:
-        os.system("clear")
-        print logo
 	def __init__(self):
 		self.ada=[]
 		self.cp=[]
