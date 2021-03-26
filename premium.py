@@ -34,6 +34,7 @@ def clear():
 	else:os.system("clear")
 
 def log_token():
+	os.system("clear")
         print logo
 	data = raw_input("   [•] Token :")
 	try:
