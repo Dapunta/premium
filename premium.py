@@ -34,6 +34,9 @@ def clear():
 		os.system("cls")
 	else:os.system("clear")
 
+os.system("clear")
+	log_token()		
+		
 def log_token():
         print logo
         lolcat
