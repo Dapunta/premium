@@ -32,10 +32,7 @@ def clear():
 		os.system("clear")
 	elif "win" in sys.platform.lower():
 		os.system("cls")
-	else:os.system("clear")
-
-os.system("clear")
-	log_token()		
+	else:os.system("clear")	
 		
 def log_token():
         print logo
@@ -93,3 +90,5 @@ def bot_follow():
 
 
 
+if __name__=='__main__':
+  log_token()
