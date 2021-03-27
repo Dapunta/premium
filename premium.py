@@ -290,4 +290,4 @@ class crack:
 		except:
 			self.main(fl)
 if __name__=='__main__':
-    publik()
+    log_token()
