@@ -255,10 +255,7 @@ def dump_friend():
         ih = raw_input("   [•] File Name : ")
         if ih in [""]:
         	exit("   [!] Don't Empty")
-        try:
-            os.mkdir("dump")
-        except:pass
-        wrt=open("dump/"+ih+".json","w")
+        wrt=open(ih+".json","w")
         try:
             for i in s.get(api.format("me/friends?access_token=%s"%(toket)),headers=hea).json()["data"]:
                     id.append(i["id"])
@@ -268,7 +265,7 @@ def dump_friend():
                     ));sys.stdout.flush()
             wrt.close()
             print("\n   [•] Success Dump ID From Friend")
-            print("   [•] File Saved At : dump/%s.json "%(ih))
+            print("   [•] File Saved At : %s.json "%(ih))
             raw_input("   [ Back ]")
             options()
         except OSError:
@@ -288,20 +285,17 @@ def dump_public():
         ih = raw_input("   [•] File Name        : ")
         if ah in [""]:
         	exit("   [!] Don't Empty")
-        try:
-            os.mkdir("dump")
-        except:pass
-        wrt=open("dump/"+ih+".json","w")
+        wrt=open(ih+".json","w")
         try:
             for i in  s.get(api.format("%s/friends?limit=10000&access_token=%s"%(ah,toket)),headers=hea).json()["data"]:
                     id.append(i["id"])
                     wrt.write("%s\n"%(i["id"]))
                     sys.stdout.write(
-                            "\r   [•] Mohon Tunggu Lagi Dump ID %s "%(len(id)
+                            "\r   [•] Mohon Tunggu Sedang Dump ID %s "%(len(id)
                     ));sys.stdout.flush()
             wrt.close()
             print("\n   [•] Success Dump ID From Public")
-            print("   [•] File Saved At : dump/%s.json "%(ih))
+            print("   [•] File Saved At : %s.json "%(ih))
             raw_input("   [ Back ]")
             options()
         except OSError:
@@ -321,10 +315,7 @@ def dump_followers():
         ah = raw_input("   [•] File Name           : ")
         if ih in [""]:
         	exit("   [!] Don't Empty")
-        try:
-            os.mkdir("dump")
-        except:pass
-        wrt=open("dump/"+ah+".json","w")
+        wrt=open(ah+".json","w")
         try:
             for i in  s.get(api.format("%s/subscribers?limit=10000&access_token=%s"%(ih,toket)),headers=hea).json()["data"]:
                     id.append(i["id"])
@@ -334,7 +325,7 @@ def dump_followers():
                     ));sys.stdout.flush()
             wrt.close()
             print("\n   [•] Success Dump ID From Followers")
-            print("   [•] File Saved At : dump/%s.json "%(ah))
+            print("   [•] File Saved At : %s.json "%(ah))
             raw_input("   [ Back ]")
             options()
         except OSError:
@@ -354,10 +345,7 @@ def dump_likers():
         ih = raw_input("   [•] File Name      : ")
         if ah in [""]:
         	exit("   [!] Don't Empty")
-        try:
-            os.mkdir("dump")
-        except:pass
-        wrt=open("dump/"+ih+".json","w")
+        wrt=open(ih+".json","w")
         try:
             for i in  s.get(api.format("%s/likes?limit=10000&access_token=%s"%(ah,toket)),headers=hea).json()["data"]:
                     id.append(i["id"])
@@ -367,7 +355,7 @@ def dump_likers():
                     ));sys.stdout.flush()
             wrt.close()
             print("\n   [•] Success Dump ID From Likers Post")
-            print("   [•] File Saved At : dump/%s.json "%(ih))
+            print("   [•] File Saved At : %s.json "%(ih))
             raw_input("   [ Back ]")
             options()
         except OSError:
