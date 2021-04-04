@@ -127,7 +127,7 @@ def logs():
   elif sek=="3":
     exit()
   else:
-    print("   [!] Fill In The Correct"))
+    print("   [!] Fill In The Correct")
     logs()
 
 def log_token():
