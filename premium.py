@@ -215,28 +215,49 @@ def menu():
 	choose_menu()
 	
 def choose_menu():
-	r=raw_input("\n   [•] Choose : ")
-	if r=="":print("   [!] Fill In The Correct")
-		menu()
-	elif r=="1":
-		publik()
-	elif r=="2":
-		follow()
-	elif r=="3":
-		likers()
-	elif r=="4":
-		crack()
-	elif r=="0":
-		try:
-			os.remove(".cok")
-			os.remove("login.txt")
-			exit(basecookie())
-		except Exception as e:
-			print("   [•] Error File Not Found %s"%e)
-	else:
-		print ("   [•] Wrong Input")
-		menu()
+    r=raw_input("\n   [•] Choose : ")
+    if r=="":print("   [!] Fill In The Correct")
+	menu()
+    elif r=="1":
+	publik()
+    elif r=="2":
+	follow()
+    elif r=="3":
+	likers()
+    elif r=="4":
+	crack()
+    elif r=="0":
+	try:
+		os.remove(".cok")
+		os.remove("login.txt")
+		exit(basecookie())
+	except Exception as e:
+		print("   [•] Error File Not Found %s"%e)
+    else:
+	print ("   [•] Wrong Input")
+	menu()
 
+def choose_options():
+    opt = raw_input("\n   [•] Choose : ")
+    if opt=="":
+        print("   [!] Fill In The Correct")
+        options()
+    elif opt=="1":
+        dump_friend()
+    elif opt=="2":
+        dump_public()
+    elif opt=="3":
+        dump_followers()
+    elif opt=="4":
+        dump_likers()
+    elif opt=="5":
+        crack()
+    elif opt=="6":
+        update_script()
+    else:
+        print("   [!] Fill In The Correct")
+        options()	
+		
 def publik():
 	try:
 		toket=open('login.txt','r').read()
