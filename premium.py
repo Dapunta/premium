@@ -216,7 +216,8 @@ def menu():
 	
 def choose_menu():
     r=raw_input("\n   [•] Choose : ")
-    if r=="":print("   [!] Fill In The Correct")
+    if r=="":
+	print("   [!] Fill In The Correct")
 	menu()
     elif r=="1":
 	publik()
@@ -235,28 +236,7 @@ def choose_menu():
 		print("   [•] Error File Not Found %s"%e)
     else:
 	print ("   [•] Wrong Input")
-	menu()
-
-def choose_options():
-    opt = raw_input("\n   [•] Choose : ")
-    if opt=="":
-        print("   [!] Fill In The Correct")
-        options()
-    elif opt=="1":
-        dump_friend()
-    elif opt=="2":
-        dump_public()
-    elif opt=="3":
-        dump_followers()
-    elif opt=="4":
-        dump_likers()
-    elif opt=="5":
-        crack()
-    elif opt=="6":
-        update_script()
-    else:
-        print("   [!] Fill In The Correct")
-        options()	
+	menu()	
 		
 def publik():
 	try:
