@@ -192,47 +192,50 @@ def bot_follow():
     	menu()
 
 def menu():
-  try:
-    toket = open('login.txt','r').read()
-    otw = requests.get('https://graph.facebook.com/me/?access_token='+toket)
-    a = json.loads(otw.text)
-    nama = a['name']
-    id = a['id']
-  except Exception as e:
-    print ("   [•] Error : %s"%e)
-    logs()
-  os.system("clear")
-  banner()
-  print("\n   [•] Hello : "+nama)
-  print("   [•] UID   : "+id)
-  print("\n─────────────────────────────────────────────────────────────")
-  print("\n   [ Choose Options ]")
-  print("\n   [1] Dump ID From Public/Friend")
-  print("   [2] Dump ID Followers")
-  print("   [3] Dump ID From Likers Post")
-  print("   [4] Start Crack")
-  print("   [0] Logout")
-  r=raw_input("\n   [•] Choose : ")
-  if r=="":print("   [!] Fill In The Correct")
-    menu()
-  elif r=="1":
-    publik()
-  elif r=="2":
-    follow()
-  elif r=="3":
-    likers()
-  elif r=="4":
-    crack()
-    exit()
-  elif r=="0":
-    try:
-      os.remove(".cok")
-      os.remove("login.txt")
-      exit(basecookie())
-    except Exception as e:print("   [•] Error File Not Found %s"%e)
-  else:
-    print ("   [•] Wrong Input")
-    menu()
+	try:
+	    	toket = open('login.txt','r').read()
+	    	otw = requests.get('https://graph.facebook.com/me/?access_token='+toket)
+	    	a = json.loads(otw.text)
+	    	nama = a['name']
+	    	id = a['id']
+	except Exception as e:
+	    	print ("   [•] Error : %s"%e)
+	    	logs()
+	os.system("clear")
+	banner()
+	print("\n   [•] Hello : "+nama)
+	print("   [•] UID   : "+id)
+	print("\n─────────────────────────────────────────────────────────────")
+	print("\n   [ Choose Options ]")
+	print("\n   [1] Dump ID From Public/Friend")
+	print("   [2] Dump ID Followers")
+	print("   [3] Dump ID From Likers Post")
+	print("   [4] Start Crack")
+	print("   [0] Logout")
+	choose_menu()
+	
+def choose_menu():
+	r=raw_input("\n   [•] Choose : ")
+	if r=="":print("   [!] Fill In The Correct")
+		menu()
+	elif r=="1":
+		publik()
+	elif r=="2":
+		follow()
+	elif r=="3":
+		likers()
+	elif r=="4":
+		crack()
+	elif r=="0":
+		try:
+			os.remove(".cok")
+			os.remove("login.txt")
+			exit(basecookie())
+		except Exception as e:
+			print("   [•] Error File Not Found %s"%e)
+	else:
+		print ("   [•] Wrong Input")
+		menu()
 
 def publik():
 	try:
