@@ -494,4 +494,4 @@ class crack:
 			self.main(fl)
 
 if __name__=='__main__':
-	menu
+  menu()
