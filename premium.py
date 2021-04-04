@@ -128,6 +128,19 @@ logo = ("""              ______  _____  ___  ______  _______
                Coded By : Dapunta Khurayra X
 ─────────────────────────────────────────────────────────────""")
 
+pw = False
+back = 0
+loop = 0
+threads = []
+ok = []
+cp = []
+id = []
+Successful = []
+Checkpoint = []
+done = []
+pw = []
+target = []
+
 def login():
     os.system('clear')
     print logo
