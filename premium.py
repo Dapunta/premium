@@ -494,10 +494,4 @@ class crack:
 			self.main(fl)
 
 if __name__=='__main__':
-	try:
-		token = open("login.txt").read() 
-		menu() 
-	except IOError:
-		print "   [!] Token/Cookie Invalid"
-		logs()
-	logs()
+	menu
