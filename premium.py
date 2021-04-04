@@ -109,27 +109,6 @@ def gets_dict_cookies(cookies):
 			result.update({i.split("=")[0]:i.split("=")[1]})
 		return result
 
-def logs():
-  os.system("clear")
-  banner()
-  print("\n   [ Choose Login Methode ]")
-  print("\n   [1] Login With Token")
-  print("   [2] Login With Cookie")
-  print("   [0] Exit")
-  sek=raw_input("\n   [•] Choose : ")
-  if sek=="":
-    print("   [!] Fill In The Correct")
-    logs()
-  elif sek=="1":
-    log_token()
-  elif sek=="2":
-    gen()
-  elif sek=="3":
-    exit()
-  else:
-    print("   [!] Fill In The Correct")
-    logs()
-
 def log_token():
     os.system('clear')
     banner()
@@ -403,6 +382,27 @@ def generate(text):
 					results.append("anjing")
                                         results.append("123456")
 	return results
+
+def logs():
+  os.system("clear")
+  banner()
+  print("\n   [ Choose Login Methode ]")
+  print("\n   [1] Login With Token")
+  print("   [2] Login With Cookie")
+  print("   [0] Exit")
+  sek=raw_input("\n   [•] Choose : ")
+  if sek=="":
+    print("   [!] Fill In The Correct")
+    logs()
+  elif sek=="1":
+    log_token()
+  elif sek=="2":
+    gen()
+  elif sek=="3":
+    exit()
+  else:
+    print("   [!] Fill In The Correct")
+    logs()
 
 class crack:
         os.system("clear")
