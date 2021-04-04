@@ -561,5 +561,5 @@ class crack:
 		except:
 			self.main(fl)
     
-if __name__=='__main__'
-	login()
+if __name__=='__main__':
+  login()
