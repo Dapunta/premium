@@ -458,7 +458,7 @@ class crack:
 				print("\n\x1b[0;37m   [•] Finished")
 				break
 	def pwlist(self):
-		self.pw=raw_input("\033[0;96m╚══\033[0;97m[•] Password List : ").split(",")
+		self.pw=raw_input("   [•] Password List : ").split(",")
 		if len(self.pw) ==0:
 			self.pwlist()
 		else:
