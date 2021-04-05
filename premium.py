@@ -131,7 +131,6 @@ def gen():
         os.system("clear")
         banner()
         cookie = raw_input("\n   [•] Cookie : ")
-        tik()
         try:
                 data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
                 'user-agent'                : 'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36', # Jangan Di Ganti Ea Anjink.
