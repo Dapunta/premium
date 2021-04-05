@@ -457,7 +457,7 @@ class crack:
 				print ("   [•] Account [CP] Saved to : cp.txt\n")
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
-				print("\n   [•] Finished")
+				print("\n\x1b[0;37m   [•] Finished")
 				break
 	def pwlist(self):
 		self.pw=raw_input("\033[0;96m╚══\033[0;97m[•] Password List : ").split(",")
@@ -471,7 +471,7 @@ class crack:
 			print ("   [•] Account [CP] Saved to : cp.txt\n")
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
-			print("\n   [•] Finished")
+			print("\n\x1b[0;37m   [•] Finished")
 	def main(self,fl):
 		try:
 			for i in fl.get("pw"):
