@@ -208,9 +208,8 @@ def choose_menu():
 	crack()
     elif r=="0":
 	try:
-		os.remove(".cok")
-		os.remove("login.txt")
-		exit(basecookie())
+		os.system('rm -rf login.txt')
+		exit()
 	except Exception as e:
 		print("   [•] Error File Not Found %s"%e)
     else:
