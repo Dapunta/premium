@@ -278,7 +278,7 @@ def follow():
 		print("   [•] Getting ID | Please Wait ...")
 		qq = (op['first_name']+'.json').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
-		for a in z['friends']['data']:
+		for a in z['data']:
 			id.append(a['id']+"<=>"+a['name'])
 			ys.write(a['id']+"<=>"+a['name']+'\n')
 		ys.close()
@@ -315,7 +315,7 @@ def likers():
 		print("   [•] Getting ID | Please Wait ...")
 		qq = (op['first_name']+'.json').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
-		for a in z['friends']['data']:
+		for a in z['data']:
 			id.append(a['id']+"<=>"+a['name'])
 			ys.write(a['id']+"<=>"+a['name']+'\n')
 		ys.close()
