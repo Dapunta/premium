@@ -369,13 +369,17 @@ def generate(text):
 		else:
 			i=i.lower()
 			if len(i)==3 or len(i)==4 or len(i)==5:
-				results.append(i)
 				results.append(i+"123")
 				results.append(i+"12345")
 			else:
-				results.append(i)
 				results.append(i+"123")
 				results.append(i+"12345")
+				results.append(i)
+				if "indonesia" in ips:
+					results.append("sayang")
+					results.append("bismillah")
+					results.append("anjing")
+                                        results.append("123456")
 	return results
 
 def logs():
@@ -492,7 +496,7 @@ class crack:
 				else:continue
 					
 			self.ko+=1
-			print "\r   [Crack] %s/%s - ok-:%s - cp-:%s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
+			print "\r\x1b[0;37m   [Crack] %s/%s - ok-:%s - cp-:%s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
 		except:
 			self.main(fl)
 
