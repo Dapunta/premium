@@ -485,7 +485,6 @@ class fastcrack:
 			except:continue
 	except Exception as e:
 		print ("   %s"%e)
-		continue
 	print ("   [•] Crack Started...")
 	print ("   [•] Account [OK] Saved to : ok.txt")
 	print ("   [•] Account [CP] Saved to : cp.txt\n")
