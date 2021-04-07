@@ -331,8 +331,8 @@ def crackez():
 	os.system("clear")
   	banner()
   	print("\n   [ Choose Methose Crack ]")
-  	print("\n   [1] Crack With mbasic")
-  	print("   [2] Crack With m.facebook.com")
+  	print("\n   [1] Fast Crack [2 List Pass]")
+  	print("   [2] Low Crack [10 List Pass]")
   	pmc=raw_input("\n   [•] Choose : ")
   	if pmc=="":
 		print("   [!] Fill In The Correct")
