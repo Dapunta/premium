@@ -471,7 +471,7 @@ class fastcrack:
         banner()
 	try:
 		while True:
-			try
+			try:
 				self.apk=raw_input("\n   [•] ID List File : ")
 				self.fs=open(self.apk).read().splitlines()
 				break
