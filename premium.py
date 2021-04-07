@@ -410,17 +410,17 @@ def mbasic(em,pas,hosts):
 def gene(text):
 	results=[]
 	global ips
-	for i in text.split(" "):
-		if len(i)<3:
+	for a in text.split(" "):
+		if len(a)<3:
 			continue
 		else:
-			i=i.lower()
-			if len(i)==3 or len(i)==4 or len(i)==5:
-				results.append(i+"123")
-				results.append(i+"12345")
+			a=a.lower()
+			if len(a)==3 or len(a)==4 or len(a)==5:
+				results.append(a+"123")
+				results.append(a+"12345")
 			else:
-				results.append(i+"123")
-				results.append(i+"12345")
+				results.append(a+"123")
+				results.append(a+"12345")
 	return results	
 	
 def generate(text):
@@ -511,7 +511,7 @@ class fastcrack:
 					self.fl=[]
 					for i in self.fs:
 						try:
-							self.fl.append({"id":i.split("<=>")[0],"pw":gene(i.split("<=>")[1])})
+							self.fl.append({"id":i.split("<=>")[0],"pw":gene(a.split("<=>")[1])})
 						except:continue
 				except Exception as e:
 					print ("   %s"%e)
