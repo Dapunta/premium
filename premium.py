@@ -494,7 +494,7 @@ class crack:
 				else:continue
 					
 			self.ko+=1
-			print "\r\x1b[0;37m   [Crack] %s/%s - ok-:%s - cp-:%s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
+			print "\r\x1b[0;37m   [Crack] %s/%s | OK : %s | CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
 		except:
 			self.main(fl)
 
