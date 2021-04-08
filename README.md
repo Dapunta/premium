@@ -6,8 +6,7 @@
 ## ⇨  𝙁𝙚𝙖𝙩𝙪𝙧𝙚 𝘿𝙪𝙢𝙥
 [✯] Dump From Friend  
 [✯] Dump From Public  
-[✯] Dump From Followers  
-[✯] Dump From Likers Post  
+[✯] Dump From Followers   
 [✯] Fast Dump  
 ## ⇨  𝙁𝙚𝙖𝙩𝙪𝙧𝙚 𝘾𝙧𝙖𝙘𝙠
 [✯] Crack Default  
