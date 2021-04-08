@@ -32,7 +32,7 @@ else:
         R = ''
         
 def banner():
-	os.system('echo -e "             ___  ___  ______  _________  ____  ___\n            / _ \/ _ \/ __/  |/  /  _/ / / /  |/  /\n           / ___/ , _/ _// /|_/ // // /_/ / /|_/ /\n          /_/  /_/|_/___/_/  /_/___/\____/_/  /_/\n           \n               Coded By : Dapunta Khurayra X\n─────────────────────────────────────────────────────────────"')
+	os.system('echo -e "             ___  ___  ______  _________  ____  ___\n            / _ \/ _ \/ __/  |/  /  _/ / / /  |/  /\n           / ___/ , _/ _// /|_/ // // /_/ / /|_/ /\n          /_/  /_/|_/___/_/  /_/___/\____/_/  /_/\n           \n               Coded By : Dapunta Khurayra X\n─────────────────────────────────────────────────────────────" | lolcat')
 
 host="https://mbasic.facebook.com"
 ua="Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
