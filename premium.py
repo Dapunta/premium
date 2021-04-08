@@ -403,8 +403,6 @@ class crack:
 				except Exception as e:
 					print ("   %s"%e)
 				os.system('echo -e "\n   [•] Crack Started...\n   [•] Account [OK] Saved to : ok.txt\n   [•] Account [CP] Saved to : cp.txt\n" | lolcat')
-				print ("   [•] Account [OK] Saved to : ok.txt")
-				print ("   [•] Account [CP] Saved to : cp.txt\n")
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print("\n\x1b[0;37m   [•] Finished")
@@ -416,9 +414,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print ("\n   [•] Crack Started...")
-			print ("   [•] Account [OK] Saved to : ok.txt")
-			print ("   [•] Account [CP] Saved to : cp.txt\n")
+			os.system('echo -e "\n   [•] Crack Started...\n   [•] Account [OK] Saved to : ok.txt\n   [•] Account [CP] Saved to : cp.txt\n" | lolcat')
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print("\n\x1b[0;37m   [•] Finished")
