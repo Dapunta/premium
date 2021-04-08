@@ -178,7 +178,7 @@ def menu():
 	print("\n   [•] Hello : "+nama)
 	print("   [•] UID   : "+id)
 	print("\n─────────────────────────────────────────────────────────────")
-	print("\n   [ Choose Options ]")
+	os.system('echo -e "\n   [ Choose Options ]" | lolcat')
 	print("\n   [1] Dump ID From Public/Friend")
 	print("   [2] Dump ID Followers")
 	print("   [3] Start Crack")
@@ -402,7 +402,7 @@ class crack:
 						except:continue
 				except Exception as e:
 					print ("   %s"%e)
-				print ("\n   [•] Crack Started...")
+				os.system('echo -e "\n   [•] Crack Started...\n   [•] Account [OK] Saved to : ok.txt\n   [•] Account [CP] Saved to : cp.txt\n" | lolcat')
 				print ("   [•] Account [OK] Saved to : ok.txt")
 				print ("   [•] Account [CP] Saved to : cp.txt\n")
 				ThreadPool(35).map(self.main,self.fl)
