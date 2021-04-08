@@ -177,7 +177,7 @@ def menu():
 	banner()
 	print("\n   [•] Hello : "+nama)
 	print("   [•] UID   : "+id)
-	print("\n─────────────────────────────────────────────────────────────")
+	os.system('echo -e "\n─────────────────────────────────────────────────────────────" | lolcat')
 	os.system('echo -e "\n   [ Choose Options ]" | lolcat')
 	print("\n   [1] Dump ID From Public/Friend")
 	print("   [2] Dump ID Followers")
