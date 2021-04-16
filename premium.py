@@ -349,8 +349,6 @@ def generate(text):
 					results.append("sayang")
 					results.append("bangsat")
 					results.append("anjing")
-                                        results.append("123456")
-                                        results.append("bismillah")
 	return results
 
 def logs():
