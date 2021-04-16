@@ -213,7 +213,7 @@ def pilihcrack():
   os.system('echo -e "\n   [ Choose Crack Methode ]" | lolcat')
   print "\n   [1] Crack Mbasic (Low Crack)"
   print "   [2] Crack Api (Fast Crack)"
-  krah=raw_input("\n  [•] Choose :")
+  krah=raw_input("\n   [•] Choose :")
   if krah in[""]:
     print("   [!] Fill In The Correct")
     pilihcrack()
