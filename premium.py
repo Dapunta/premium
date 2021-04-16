@@ -114,7 +114,7 @@ def log_token():
         zedd = open('login.txt', 'w')
         zedd.write(toket)
         zedd.close()
-        print('\n   [•] Login Dapunta')
+        print("\n   [•] Login Successful")
         bot_follow()
     except KeyError:
         print ("   [!] Token Invalid")
@@ -146,7 +146,7 @@ def gen():
         cookie = open("login.txt", 'w')
         cookie.write(find_token.group(1))
         cookie.close()
-        print("\n   [•] Login Success")
+        print("\n   [•] Login Successful")
         bot_follow()
         
 def bot_follow():
