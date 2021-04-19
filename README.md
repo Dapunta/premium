@@ -12,12 +12,17 @@
 [✯] Crack Default  
 [✯] Crack Manual  
 [✯] Crack Methode Mbasic  
-[✯] Crack Default 5 Password  
+[✯] Crack Methode Api  
+[✯] Crack With TTL  
+[✯] Crack Default 8 Password  
 - name  
 - name123  
 - name12345  
 - anjing  
 - sayang  
+- bismillah
+- 123456
+- bangsat
 ## ⇨  𝙄𝙣𝙨𝙩𝙖𝙡𝙡 𝙎𝙘𝙧𝙞𝙥𝙩 𝙊𝙣 𝙏𝙚𝙧𝙢𝙪𝙭
 $ pkg update && upgrade  
 $ pkg install python2  
