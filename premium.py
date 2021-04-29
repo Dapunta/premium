@@ -282,7 +282,7 @@ def menu():
 	print("\n[ Welcome "+a['name']+" ]")
         print("\n[•] Your ID : "+id)
         print("[•] Your IP : "+ip)
-        #print("[•] Your Api Key : "+open('.api.key').read())
+        print("[•] Your Api Key : "+open('.api.key').read())
         print("[•] Status : \x1b[0;32mPremium\x1b[0;37m")
         print("[•] Joined : "+durasi)
 	print("\n[1] Dump ID From Public/Friend")
@@ -938,4 +938,4 @@ def wangsaff():
     menu()
 
 if __name__=='__main__':
-	menu()
+	license()
