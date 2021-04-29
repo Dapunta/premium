@@ -333,6 +333,8 @@ def useragent():
             dpnt.write(ua)
             dpnt.close()
             pilihcrack()
+	except KeyboardInterrupt:
+            os.sys.exit()
     else:
         print("\n[!] Fill In The Correct")
         menu()
@@ -456,8 +458,8 @@ def generate(text):
 	return results
 
 def mbasic(em,pas,hosts):
-    global mbasic_h
-    try:
+    	global mbasic_h
+    	try:
 		ua = open('useragent.txt','r').read()
 	except IOError:
 		print("\n[!] Wrong User Agent")
