@@ -347,12 +347,12 @@ def ress():
     banner()
     print("\n[ OK ]")
     try:
-        open('ok.txt').write()
+        os.system("cat ok.txt")
     except IOError:
         print("[!] No Result Found")
     print("\n[ CP ]")
     try:
-        open('cp.txt').write()
+        os.system("cat cp.txt")
     except IOError:
         print("[!] No Result Found")
     raw_input("\n[ Back ]")
