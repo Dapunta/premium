@@ -311,9 +311,9 @@ def choose_menu():
 	ress()
     elif r=="0":
 	try:
-        jalan("\n[•] Thanks For Using My Script")
-        os.system('rm -rf login.txt')
-        exit()
+        	jalan("\n[•] Thanks For Using My Script")
+       	 	os.system('rm -rf login.txt')
+        	exit()
     except Exception as e:
 		print("[!] Error %s"%e)
     else:
