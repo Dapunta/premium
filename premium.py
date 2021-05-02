@@ -304,7 +304,7 @@ def choose_menu():
     elif r=="2":
 	follow()
     elif r=="3":
-    target()
+    	target()
     elif r=="4":
 	useragent()
     elif r=="5":
