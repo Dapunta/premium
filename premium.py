@@ -63,7 +63,7 @@ ttl =[]
 durasi = str(datetime.now().strftime("%d-%m-%Y"))
 license = requests.get("https://raw.githubusercontent.com/Dapunta2021/server/main/apikey.txt").text
 dev_dapunta = requests.get("https://raw.githubusercontent.com/Dapunta2021/sbf/main/durasi.php").text
-response = (k+"["+p+"!"+k"]"+p+" Script Was Expired")
+response = ("[!] Script Was Expired")
 year_to_expire = int(dev_dapunta)
 try:
 	assert int(durasi.split("-")[-1]) == year_to_expire, response
