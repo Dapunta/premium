@@ -136,7 +136,7 @@ def license():
 	try:
 		toket = open(".api.key","r").read()
 	except IOError:
-		print (k+"["+p+"!"+k"]"+p+" Api Key Invalid") 
+		print k+"["+p+"!"+k"]"+p+" Api Key Invalid"
 		os.system("clear")
 		os.system("rm -rf .api.key")
 		asup()
@@ -152,11 +152,11 @@ def asup():
     idg = open(".api.key", "w")
     idg.write(id)
     idg.close()
-    print (k+"\n["+p+"•"+k"]"+p+" Api Key : " + id)
-    print (k+"["+p+"•"+k"]"+p+" Api Key Not Confirmed")
-    print (k+"["+p+"•"+k"]"+p+" Please Chat Admin For Confirmation")
-    print (k+"["+p+"•"+k"]"+p+" Run Again The Script")
-    raw_input(k+"\n[ "+p+"Enter"+k+" ]"+p)
+    print k+"\n["+p+"•"+k"]"+p+" Api Key : " + id
+    print k+"["+p+"•"+k"]"+p+" Api Key Not Confirmed"
+    print k+"["+p+"•"+k"]"+p+" Please Chat Admin For Confirmation"
+    print k+"["+p+"•"+k"]"+p+" Run Again The Script"
+    raw_input (k+"\n[ "+p+"Enter"+k+" ]"+p)
     os.system("am start https://wa.me/6282245780524?text=Please%20Confirm%20My%20ID%20" + id + " >/dev/null")
     exit()
 
