@@ -603,30 +603,15 @@ def generate(text):
     results=[]
     global ips
     for i in text.split(" "):
-        if len(i)<3:
-            continue
-        else:
-            i=i.lower()
-            if len(i)==3 or len(i)==4 or len(i)==5:
-                results.append(i)
-                results.append(i+"123")
-                results.append(i+"1234")
-                results.append(i+"12345")
-            else:
-                results.append(i)
-                results.append(i+"123")
-                results.append(i+"1234")
-                results.append(i+"12345")
-                if "indonesia" in ips:
-                    results.append("sayang")
-                    results.append("bismillah")
-                    results.append("anjing")
-                    results.append("123456")
-                if "bangladesh" in ips and "pakistan" in ips and "india" in ips:
-                    results.append(i+"786")
-                    results.append("786786")
-                    results.append("000786")
-                    results.append("102030")
+	i=i.lower()
+	results.append(i)
+	results.append(i+"123")
+	results.append(i+"1234")
+	results.append(i+"12345")
+	results.append("sayang")
+	results.append("bismillah")
+	results.append("anjing")
+	results.append("123456")
     return results
 
 ### BRUTE CRACK ###
