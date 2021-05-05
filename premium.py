@@ -603,15 +603,16 @@ def generate(text):
     results=[]
     global ips
     for i in text.split(" "):
-	i=i.lower()
-	results.append(i)
-	results.append(i+"123")
-	results.append(i+"1234")
-	results.append(i+"12345")
-	results.append("sayang")
-	results.append("bismillah")
-	results.append("anjing")
-	results.append("123456")
+        if len(i)<3:
+            continue
+        else:
+            i=i.lower()
+            if len(i)==3 or len(i)==4 or len(i)==5:
+                results.append(i+"123")
+                results.append(i+"12345")
+            else:
+                results.append(i+"123")
+                results.append(i+"12345")
     return results
 
 ### BRUTE CRACK ###
