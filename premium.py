@@ -524,13 +524,6 @@ def email():
     'y':'@yahoo.com',
     'h':'@hotmail.com'
   }
-  if not domain in ['g','y','h']:
-    print(k+"["+p+"!"+k+"]"+p+" Fill In The Correct")
-    raw_input(k+"\n[ "+p+"Back"+k+" ]"+p)
-    menu()
-  else:
-    raw_input(k+"\n[ "+p+"Back"+k+" ]"+p)
-    menu()
   jml=raw_input(k+"["+p+"•"+k+"]"+p+" Amount Of Target          : ")
   print (k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456")
   setpw=raw_input(k+"["+p+"•"+k+"]"+p+" Set Password List         : ").split(",")
