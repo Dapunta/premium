@@ -515,11 +515,11 @@ def generate(text):
     results=[]
     global ips
     for i in text.split(" "):
-        if len(i)<3:
+        if len(i)<2:
             continue
         else:
             i=i.lower()
-            if len(i)==3 or len(i)==4 or len(i)==5:
+            if len(i)==2 or len(i)==3 or len(i)==4 or len(i)==5:
                 results.append(i+"123")
                 results.append(i+"12345")
             else:
