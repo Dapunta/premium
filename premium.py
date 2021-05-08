@@ -76,7 +76,8 @@ def clear():
 	elif "win" in sys.platform.lower():
 		os.system("cls")
 	else:os.system("clear")
-    def lang(cookies):
+		
+def lang(cookies):
 	f=False
 	rr=bs4.BeautifulSoup(requests.get("https://mbasic.facebook.com/language.php",headers=hdcok(),cookies=cookies).text,"html.parser")
 	for i in rr.find_all("a",href=True):
