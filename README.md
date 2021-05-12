@@ -24,7 +24,7 @@
 - 123456
 ## ⇨  Install Script On Termux
 $ pkg update && upgrade  
-$ pkg install python2  
+$ pkg install python  
 $ pkg install git  
 $ pip install bs4  
 $ pip install requests  
