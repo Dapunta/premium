@@ -8,9 +8,6 @@
 [✯] Dump From Public  
 [✯] Dump From Followers   
 [✯] Fast Dump  
-## ⇨ Feature Useragent
-[✯] User Agent Default  
-[✯] User Agent Manual
 ## ⇨  Feature Crack
 [✯] Crack Default  
 [✯] Crack Manual  
