@@ -29,14 +29,15 @@
 $ pkg update && upgrade  
 $ pkg install python2  
 $ pkg install git  
-$ pip2 install bs4  
-$ pip2 install requests  
-$ pip2 install mechanize  
+$ pip install bs4  
+$ pip install requests  
+$ pip install mechanize  
+$ pip install futures  
 $ rm -rf premium  
 $ git clone https://github.com/Dapunta/premium  
 ## ⇨  Run Script
 $ cd premium  
-$ python2 premium  
+$ python premium3  
 ## ⇨  How To Use
 1. Cari Akun Target
 2. Dump ID Terlebih Dahulu
