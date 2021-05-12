@@ -67,7 +67,7 @@ def menunum():
     print((k+"["+p+"4"+k+"]"+p+" Pakistan"))
     print((k+"["+p+"5"+k+"]"+p+" USA"))
     print((k+"["+p+"0"+k+"]"+p+" Back"))
-    pilihnum()
+    exit(pilihnum())
     
 def pilihnum():
     cm=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
