@@ -135,7 +135,7 @@ def menunum():
 
     print(k+"\n["+p+"•"+k+"]"+p+" Crack Started, Please Wait...\n")
 
-    def main(arg)
+    def main(arg):
         global cps,oks
         user = arg
         try:
