@@ -59,7 +59,7 @@ def banner():
 def menunum():
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Crack Phone Number"+k+" ]"+p))
+    print((k+"\n[ "+p+"Crack Phone Number"+k+" ]"))
     print((k+"\n["+p+"1"+k+"]"+p+" Indonesia"))
     print((k+"["+p+"2"+k+"]"+p+" Bangladesh"))
     print((k+"["+p+"3"+k+"]"+p+" India"))
