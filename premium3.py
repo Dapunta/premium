@@ -5,7 +5,7 @@
 #Lu Mau Recode, Mau Lu Apain Terserah Bro, Tapi Hargai Lah Karya Gua.
 #Gw Bikin Ni SC Susah Payah, Ngerakit Sana Sini Banyak Error, Jgn Seenaknya Ganti Nama Author, Apalagi Ngalihin Botnya. Terima Kasih.
 
-import requests,bs4,sys,os,subprocess,uuid
+import requests,mechanize,bs4,sys,os,subprocess,uuid
 import requests,sys,random,time,re,base64,json
 import os, re, requests, concurrent.futures
 from random import randint
@@ -13,6 +13,20 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
 from datetime import datetime
 current = datetime.now()
+
+try:
+	import mechanize
+except ImportError:
+	os.system("pip install mechanize")
+try:
+	import requests
+except ImportError:
+	os.system("pip install requests")
+try:
+	import bs4
+except ImportError:
+	os.system("pip install bs4")
+	os.system("python premium3.py")
 
 p = "\x1b[0;37m" # putih
 m = "\x1b[0;31m" # merah
