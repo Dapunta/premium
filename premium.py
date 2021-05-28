@@ -288,7 +288,7 @@ def choose_menu():
 	elif r=="4":
 		search_name()
 	elif r=="5":
-		exit(crack.pilihcrack)
+		exit(crack.pilihcrack())
 	elif r=="6":
 		target()
 	elif r=="7":
