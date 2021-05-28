@@ -8,6 +8,7 @@
 import requests,mechanize,bs4,sys,os,subprocess,uuid
 import requests,sys,random,time,re,base64,json
 import os, re, requests, concurrent.futures
+import crack
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
