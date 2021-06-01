@@ -34,7 +34,7 @@ $ rm -rf premium
 $ git clone https://github.com/Dapunta/premium  
 ## ⇨  Run Script
 $ cd premium  
-$ python premium3  
+$ python premium.py  
 ## ⇨  How To Use
 1. Cari Akun Target
 2. Dump ID Terlebih Dahulu
