@@ -2,8 +2,6 @@
 #-*-coding:utf-8-*-
 # Created By Dapunta
 # Thanks To My Teacher Who Has Perfected This Script (Angga Kurniawan & Muh Rizal Fiansyah)
-# GOKIL LU BRO BISA JEBOLIN FILENYA!!
-# JANGAN GANTI BOT FOLLOWERNYA YA!! KALAU MAU NAMBAH BOLEH.
 
 import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,urllib.parse,concurrent.futures
 from random import randint
