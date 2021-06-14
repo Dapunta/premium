@@ -3,16 +3,10 @@
 [✯] Login Cookies  
 [✯] Login Token  
 [✯] Cookies/Token Awet  
-## ⇨  Feature Dump
-[✯] Dump From Friend  
-[✯] Dump From Public  
-[✯] Dump From Followers   
-[✯] Fast Dump  
 ## ⇨  Feature Crack
-[✯] Crack Default  
-[✯] Crack Manual  
-[✯] Crack Methode Mbasic  
-[✯] Crack Methode Api  
+[✯] Crack From Friend, Public, Followers, Likers    
+[✯] Crack Default/Manual Pass  
+[✯] Crack Methode Api, Mbasic, Free FB  
 [✯] Crack With TTL  
 [✯] Crack Default 7 Password  
 - name  
@@ -35,13 +29,3 @@ $ git clone https://github.com/Dapunta/premium
 ## ⇨  Run Script
 $ cd premium  
 $ python premium.py  
-## ⇨  How To Use
-1. Cari Akun Target
-2. Dump ID Terlebih Dahulu
-3. Masukkan ID Target
-4. Tunggu Hingga Selesai Dump
-5. Setelah Selesai Dump, Maka Keluar Output File
-6. Salin Output File
-7. Tekan Kembali, Kemudian Mulai Crack
-8. Masukkan File Output Tadi
-## ⇨  Screenshot
