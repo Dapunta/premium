@@ -3,9 +3,8 @@
 # Created By Dapunta
 # Thanks To My Teacher Who Has Perfected This Script (Angga Kurniawan & Muh Rizal Fiansyah)
 
-import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,urllib.parse,concurrent.futures
+import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,concurrent.futures
 from random import randint
-from urllib.parse import quote
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
 from datetime import datetime
