@@ -283,8 +283,8 @@ def choose_menu():
 		menu()	
 
 def pilihcrack(file):
-  print((k+"["+p+"1"+k+"]"+p+" Mbasic ("+h+"Recommended"+p+")"))
-  print((k+"["+p+"2"+k+"]"+p+" Mbasic + TTL")
+  print((k+"\n["+p+"1"+k+"]"+p+" Mbasic ("+h+"Recommended"+p+")"))
+  print((k+"["+p+"2"+k+"]"+p+" Mbasic + TTL"))
   krah=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
   if krah in[""]:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
