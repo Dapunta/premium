@@ -1,6 +1,6 @@
 # ✭ PREMIUM CRACK
 #### Made With ❤️ By Dapunta  
-```php
+```
 Thanks To :
 - Rizal Fiansyah
 - Angga Kurniawan
@@ -10,13 +10,13 @@ Thanks To :
 - RATU ERROR
 ```
 ## ⇨  Feature Login
-```php  
+```
 [✯] Login Cookies  
 [✯] Login Token  
 [✯] Cookies/Token Awet  
 ```
 ## ⇨  Feature Crack
-```php
+```
 [✯] Crack From Friend, Public, Followers, Likers    
 [✯] Crack Default/Manual Pass  
 [✯] Crack Methode Api, Mbasic, Free FB  
@@ -24,7 +24,7 @@ Thanks To :
 [✯] Crack Default 4 Country + 1 None
 ```
 ## ⇨  Install Script On Termux
-```php
+```
 $ pkg update && upgrade  
 $ termux-setup-storage  
 $ pkg install python  
@@ -37,12 +37,12 @@ $ rm -rf premium
 $ git clone https://github.com/Dapunta/premium  
 ```
 ## ⇨  Run Script
-```php
+```
 $ cd premium  
 $ python premium.py  
 ```
 ## ⇨  Information
-```php
+```
 [!] Kenapa Cracknya Lemot Ngab? Sebab :
 ✯ ---> Crack Indonesia = 7 Pass
 ✯ ---> Crack India/Bangla = 7 Pass
@@ -59,7 +59,7 @@ $ python premium.py
 ```
 
 ## ⇨ Note
-```php
+```
 [!] Dapunta Tidak Pernah Membuat SC Berbayar
 [!] SC Ini 100% Gratis, Resiko Atas Penyalahgunaan, Ditanggung Pengguna
 [!] Recode? Silahkan, Asal Jangan Ganti Bot Follownya
