@@ -964,7 +964,7 @@ class crackttl:
 					open("cp.txt","a+").write("%s • %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mCP\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write("%s • %s\n"%(fl.get("id"),i))
 					break
