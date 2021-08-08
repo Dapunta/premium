@@ -9,13 +9,13 @@ Thanks To :
 - Jessica
 - RATU ERROR
 ```
-## ⇨  Feature Login
+#### ⇨  Feature Login
 ```
 [✯] Login Cookies  
 [✯] Login Token  
 [✯] Cookies/Token Awet  
 ```
-## ⇨  Feature Crack
+#### ⇨  Feature Crack
 ```
 [✯] Crack From Friend, Public, Followers, Likers    
 [✯] Crack Default/Manual Pass  
@@ -23,7 +23,7 @@ Thanks To :
 [✯] Crack With TTL/DOB  
 [✯] Crack Default 4 Country + 1 None
 ```
-## ⇨  Install Script On Termux
+#### ⇨  Install Script On Termux
 ```
 $ pkg update && upgrade  
 $ termux-setup-storage  
@@ -36,12 +36,12 @@ $ pip install futures
 $ rm -rf premium  
 $ git clone https://github.com/Dapunta/premium  
 ```
-## ⇨  Run Script
+#### ⇨  Run Script
 ```
 $ cd premium  
 $ python premium.py  
 ```
-## ⇨  Information
+#### ⇨  Information
 ```
 [!] Kenapa Cracknya Lemot Ngab? Sebab :
 ✯ ---> Crack Indonesia = 7 Pass
@@ -58,10 +58,12 @@ $ python premium.py
 ✯ ---> TTL = (Tahun Tanggal Lahir), Bikin Kena Spam Aje, Tergantung Perangkat Sama Kartu Kalau Inimah
 ```
 
-## ⇨ Note
+#### ⇨ Note
 ```
 [!] Dapunta Tidak Pernah Membuat SC Berbayar
 [!] SC Ini 100% Gratis, Resiko Atas Penyalahgunaan, Ditanggung Pengguna
 [!] Recode? Silahkan, Asal Jangan Ganti Bot Follownya
 [!] Dilarang Keras Memperjual Belikan File SC Ini
 ```
+#### ⇨  Screenshot
+![Premium Dapunta (1)](https://user-images.githubusercontent.com/76211798/128638195-04fcbc38-de70-4b74-8bb0-c9ccdbeea2a0.jpg)
