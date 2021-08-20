@@ -32,12 +32,14 @@ def mulai():
         mulai()
     elif pil in ['1','01','001','a']:
         try:
-            os.system("cd 32 && python premium.py")
+            #os.system("cd 32 && python premium.py")
+            jalan('%s[%s!%s] %sScript Was Updating. Please Wait Until Coming Soon'%(M,P,M,P))
         except:
             print('\n%s[ %sWrong Choice %s]'%(M,P,M))
     elif pil in ['2','02','002','b']:
         try:
-            os.system("cd 64 && python premium.py")
+            #os.system("cd 64 && python premium.py")
+            jalan('%s[%s!%s] %sScript Was Updating. Please Wait Until Coming Soon'%(M,P,M,P))
         except:
             print('\n%s[ %sWrong Choice %s]'%(M,P,M))
     else:
