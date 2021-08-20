@@ -1,13 +1,22 @@
 # ✭ PREMIUM CRACK
 #### Made With ❤️ By Dapunta  
-```
-Thanks To :
-- Rizal Fiansyah
-- Angga Kurniawan
-- Moch Yayan
-- Hamzah
-- Jessica
-- RATU ERROR
+``` 
+Author :
+    • Dapunta Khurayra X
+  
+Team Project HEKER HEKER BIUTIPUL :
+    • Muhamad Rizal Fiansyah Id
+    • Angga Kurniawan
+    • Yayan XD
+    • Boy Hamzah
+    • Latip Harkat
+    • Zacky Tricker
+    • Sutan Ubay
+    • Rizky Dev
+    • Iqbal Dev
+    • Aap Afandi
+    • Fallen
+    • Hanifan
 ```
 #### ⇨  Feature Login
 ```
