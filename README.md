@@ -48,6 +48,7 @@ $ git clone https://github.com/Dapunta/premium
 #### ⇨  Run Script
 ```
 $ cd premium  
+$ git pull  
 $ python premium.py  
 ```
 #### ⇨  Information
