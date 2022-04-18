@@ -1,5 +1,5 @@
 # ✭ PREMIUM CRACK
-#### Made With ❤️ By Dapunta  
+#### Made With ❤️ By amir
 ``` 
 Author :
     • Dapunta Khurayra X
